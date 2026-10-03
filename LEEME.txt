@@ -5,7 +5,7 @@ Estructura
   index.html        Página de la invitación
   css/styles.css    Estilos
   js/script.js      Conteo regresivo y ventanas de "Ver más"
-  img/              Fondo de portada y logo del trofeo
+  img/              Fondo de portada, logo, relojes e íconos
 
 Cómo verla
   Abre index.html en el navegador, o sube la carpeta completa a tu hosting
@@ -16,6 +16,9 @@ Cambiar fondos de las secciones
     --bg-hero, --bg-celebrar, --bg-fecha, --bg-info, --bg-detalles, --bg-footer
   Copia tu imagen en img/ y reemplaza "none" por, por ejemplo:
     --bg-celebrar: url('../img/fondo-celebrar.jpg');
+
+Cambiar un ícono
+  Reemplaza el archivo en img/ con el mismo nombre (ic-vestimenta.webp, etc.).
 
 Fecha del conteo
   En js/script.js: new Date('2026-11-28T17:30:00-04:00')  (hora de RD)

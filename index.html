@@ -16,6 +16,7 @@
     <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 0l1.9 10.1L24 12l-10.1 1.9L12 24l-1.9-10.1L0 12l10.1-1.9z"/></symbol>
     <symbol id="i-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
     <linearGradient id="gg" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="22"><stop offset="0" stop-color="#fbe6ab"/><stop offset=".5" stop-color="#e2b25c"/><stop offset="1" stop-color="#b47c30"/></linearGradient>
+    <linearGradient id="gb" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="22"><stop offset="0" stop-color="#4a74d6"/><stop offset=".5" stop-color="#1f3f99"/><stop offset="1" stop-color="#0b1d4f"/></linearGradient>
     <linearGradient id="gg-dark" gradientUnits="userSpaceOnUse" x1="0" y1="2" x2="0" y2="22"><stop offset="0" stop-color="#c9933f"/><stop offset=".55" stop-color="#9a6522"/><stop offset="1" stop-color="#6e4614"/></linearGradient>
     <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="13.5" r="7.6"/><circle cx="12" cy="13.5" r="5.8" opacity=".45"/><path d="M12 10v3.5l2.4 1.6"/><path d="M10.4 3.2h3.2M12 3.2v2.7"/><path d="M17.6 6.9l1.3-1.3"/></symbol>
     <symbol id="i-dress" viewBox="0 0 24 24"><path d="M9.6 2.2l.6 4.3M14.4 2.2l-.6 4.3"/><path d="M10.2 6.5c.5.9 1.1 1.4 1.8 1.4s1.3-.5 1.8-1.4c.9 1.3 1 2.6.4 3.8 2 3.4 3.4 7 4.2 11.4H5.6c.8-4.4 2.2-8 4.2-11.4-.6-1.2-.5-2.5.4-3.8z"/><path d="M9.8 10.3h4.4"/><path d="M12 13.5c-.6 2.6-1.6 5.2-3 8.2M13.4 14.2c.6 2.4 1.2 4.9 1.6 7.5" opacity=".5"/></symbol>
@@ -59,8 +60,8 @@
     <div class="date-big"><span class="num gold-text">28</span><span class="month">DE NOVIEMBRE</span></div>
     <div class="vline" aria-hidden="true"></div>
     <div class="times">
-      <div class="time-row"><span class="icon-ring"><svg><use href="#i-clock"/></svg></span><div><b>GALA</b><span>5:30 p. m. – 7:00 p. m.</span></div></div>
-      <div class="time-row"><span class="icon-ring"><svg><use href="#i-clock"/></svg></span><div><b>CEREMONIA</b><span>7:00 p. m. – 9:00 p. m.</span></div></div>
+      <div class="time-row"><img class="clock" src="img/reloj-gala.webp" alt="Reloj marcando las 5:30" width="64" height="64"><div><b>GALA</b><span>5:30 p. m. – 7:00 p. m.</span></div></div>
+      <div class="time-row"><img class="clock" src="img/reloj-ceremonia.webp" alt="Reloj marcando las 7:00" width="64" height="64"><div><b>CEREMONIA</b><span>7:00 p. m. – 9:00 p. m.</span></div></div>
     </div>
   </div>
   <p class="faltan tracked">Faltan</p>
@@ -80,15 +81,15 @@
   <p class="info__lead">Toca cada opción para ver los detalles.</p>
   <div class="btn-grid">
     <button class="frame info-btn" data-open="m-vestimenta">
-      <span class="icon-ring icon-lg"><svg><use href="#i-dress"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-vestimenta.webp" alt="" width="200" height="200"></span>
       <span class="info-btn__body"><span class="info-btn__title">Código de vestimenta</span><span class="mini-orn" aria-hidden="true"><span></span><svg><use href="#i-star"/></svg><span></span></span><span class="info-btn__teaser">Gala / Formal</span><span class="info-btn__more"><span class="more-txt">Ver más</span><svg><use href="#i-chev"/></svg></span></span>
     </button>
     <button class="frame info-btn" data-open="m-ubicacion">
-      <span class="icon-ring icon-lg"><svg><use href="#i-pin"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-ubicacion.webp" alt="" width="200" height="200"></span>
       <span class="info-btn__body"><span class="info-btn__title">Ubicación</span><span class="mini-orn" aria-hidden="true"><span></span><svg><use href="#i-star"/></svg><span></span></span><span class="info-btn__teaser">Club Recreativo de Oficiales</span><span class="info-btn__more"><span class="more-txt">Ver más</span><svg><use href="#i-chev"/></svg></span></span>
     </button>
     <button class="frame info-btn" data-open="m-ninos">
-      <span class="icon-ring icon-lg"><svg><use href="#i-nokids"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-ninos.webp" alt="" width="200" height="200"></span>
       <span class="info-btn__body"><span class="info-btn__title">No se permiten niños</span><span class="mini-orn" aria-hidden="true"><span></span><svg><use href="#i-star"/></svg><span></span></span><span class="info-btn__teaser">Evento exclusivo para adultos</span><span class="info-btn__more"><span class="more-txt">Ver más</span><svg><use href="#i-chev"/></svg></span></span>
     </button>
   </div>
@@ -100,20 +101,19 @@
   <div class="orn"><span></span><svg><use href="#i-star"/></svg><span></span></div>
   <div class="card-grid">
     <article class="frame d-card">
-      <span class="icon-ring icon-lg"><svg><use href="#i-ticket"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-boletas.webp" alt="" width="200" height="200"></span>
       <h3>Boletas adicionales</h3>
       <div class="mini-orn"><span></span><svg><use href="#i-star"/></svg><span></span></div>
       <p>Si deseas asistir acompañado/a, podrás adquirir boletas adicionales para la persona o personas que desees llevar. Estas boletas estarán disponibles para la venta y sujetas a disponibilidad.</p>
     </article>
     <article class="frame d-card">
-      <span class="icon-ring icon-lg"><svg><use href="#i-clock"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-puntualidad.webp" alt="" width="200" height="200"></span>
       <h3>Puntualidad</h3>
       <div class="mini-orn"><span></span><svg><use href="#i-star"/></svg><span></span></div>
       <p>Agradecemos llegar con anticipación para facilitar el proceso de recepción y ubicación de los invitados.</p>
-      <table class="sched"><tr><th>Gala</th><td>5:30 p. m. – 7:00 p. m.</td></tr><tr><th>Ceremonia</th><td>7:00 p. m. – 9:00 p. m.</td></tr></table>
     </article>
     <article class="frame d-card">
-      <span class="icon-ring icon-lg"><svg><use href="#i-badge"/></svg></span>
+      <span class="icon-ring icon-lg icon-img"><img src="img/ic-acceso.webp" alt="" width="200" height="200"></span>
       <h3>Acceso</h3>
       <div class="mini-orn"><span></span><svg><use href="#i-star"/></svg><span></span></div>
       <p>La entrada será validada mediante la invitación o boleta correspondiente. La invitación no es transferible.</p>
@@ -137,7 +137,7 @@
 <dialog id="m-vestimenta" aria-labelledby="t-vest">
   <div class="modal__inner">
     <button class="modal__close" data-close aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
-    <span class="icon-ring"><svg><use href="#i-dress"/></svg></span>
+    <span class="icon-ring icon-img"><img src="img/ic-vestimenta.webp" alt="" width="200" height="200"></span>
     <h3 id="t-vest" class="gold-text">Código de vestimenta</h3>
     <p class="lead">Gala / Formal</p>
     <p>Se solicita asistir con una vestimenta acorde con la elegancia y formalidad de la ceremonia.</p>
@@ -147,7 +147,7 @@
 <dialog id="m-ubicacion" aria-labelledby="t-ubi">
   <div class="modal__inner">
     <button class="modal__close" data-close aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
-    <span class="icon-ring"><svg><use href="#i-pin"/></svg></span>
+    <span class="icon-ring icon-img"><img src="img/ic-ubicacion.webp" alt="" width="200" height="200"></span>
     <h3 id="t-ubi" class="gold-text">Ubicación</h3>
     <p class="lead">Club Recreativo de Oficiales</p>
     <p>28 de noviembre · Gala desde las 5:30 p. m.</p>
@@ -158,7 +158,7 @@
 <dialog id="m-ninos" aria-labelledby="t-nin">
   <div class="modal__inner">
     <button class="modal__close" data-close aria-label="Cerrar"><svg><use href="#i-close"/></svg></button>
-    <span class="icon-ring"><svg><use href="#i-nokids"/></svg></span>
+    <span class="icon-ring icon-img"><img src="img/ic-ninos.webp" alt="" width="200" height="200"></span>
     <h3 id="t-nin" class="gold-text">No se permiten niños</h3>
     <p>Por la naturaleza y formalidad de la actividad, no está permitida la entrada de niños.</p>
     <p>La gala estará dirigida exclusivamente a público adulto.</p>
