@@ -24,4 +24,4 @@ Fecha del conteo
   En js/script.js: new Date('2026-11-28T17:30:00-04:00')  (hora de RD)
 
 Ubicación
-  En index.html busca "google.com/maps" y pon el enlace exacto del lugar.
+  El botón "Cómo llegar" abre: https://maps.app.goo.gl/3XZE7swP6rt66KKSA
